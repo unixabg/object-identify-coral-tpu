@@ -138,7 +138,7 @@ def main():
 
         # Save the frame to the output directory if the object is detected
         if save_frame:
-            output_path = os.path.join(args.output_dir, f'frame_{frame_count:05d}.jpg')
+            output_path = os.path.join(args.output_dir, f'{args.video_file}_frame_{frame_count:05d}.jpg')
             cv2.imwrite(output_path, frame)
             print(f'Saved: {output_path}')
 
